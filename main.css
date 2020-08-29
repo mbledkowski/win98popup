@@ -1,0 +1,96 @@
+.win98popup {
+  display: flex;
+  flex-flow: column nowrap;
+ 
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Microsoft Sans Serif", sans-serif;
+  background: #c2c6ca;
+  font-size: 12px;
+  -webkit-font-smoothing: none;
+  width: 265px;
+  height: 118px;
+  box-shadow: 0.5px 0.5px 0 0.5px black, inset 1px 1px #C2C6CA, inset -1px -1px #85898d, inset 2px 2px white;
+
+  button {
+    background: #c2c6ca;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+      &:focus {
+        outline: none;
+        box-shadow: 0.5px 0.5px 0 0.5px black, inset 1px 1px black,  inset -1px -1px black, inset 2px 2px white, inset -2px -2px #85898d;
+      }
+  }
+
+  .shadow {
+    box-shadow: 0.5px 0.5px 0 0.5px black, inset 1px 1px white,
+      inset -1px -1px #85898d;
+  }
+
+  .bar {
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: bold;
+    justify-content: space-between;
+    width: calc(100% - 11px);
+    height: 13px;
+    color: white;
+    background: #00a;
+    padding: 2px 3px 3px;
+    margin: 3px 2px 1px 3px;
+    p {
+      margin: 0;
+    }
+    button {
+      width: 15px;
+      height: 13px;
+      &:active {
+        box-shadow: 0.5px 0.5px 0 0.5px white, inset 1px 1px black,
+          inset -1px -1px #c2c6ca, inset 2px 2px #85898d;
+        outline: none;
+        svg {
+          transform: translateX(1px) translateY(1px);
+        }
+      }
+      svg {
+        margin: 3px 3px 3px 4px;
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1px 15px 14px 14px;
+    button {
+      width: 74px;
+      height: 22px;
+      &:not(:last-child){
+        margin-right: 7px;
+      }
+      p {
+        font-size: 12px;
+        margin: 0;
+      }
+      &:active {
+        box-shadow: 0.5px 0.5px 0 0.5px black, inset 1px 1px black,
+          inset -1px -1px #85898d, inset 2px 2px #85898d;
+        outline: none;
+        p {
+          transform: translateX(1px) translateY(1px);
+        }
+      }
+    }
+  }
+}
+
+html, body{
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #55aaaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
